@@ -10,6 +10,7 @@ public class Main {
         System.out.println("1. 테이블 생성");
         System.out.println("2. DB 입력");
         System.out.print("원하는 작업을 입력하세요 >> ");
+
         int num = in.nextInt();
         if (num == 1) {
             dbm.DBTableCreate();
