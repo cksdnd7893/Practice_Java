@@ -28,7 +28,7 @@ public class DBManager {
     }
 
     public void DBTableCreate() {
-        String sql = "CREATE TABLE IF NOT EXISTS TEST_DBTABLE(ID INT, name varchar(20));";
+        String sql = "CREATE TABLE IF NOT EXISTS TEST_DBTABLE(ID varchar(200), name varchar(20));";
 
         try {
             Statement st = this.conn.createStatement();
@@ -40,8 +40,8 @@ public class DBManager {
 
     }
 
-    public void DBInput(int n, String name) {
-        String sql = "INSERT INTO TEST_DBTABLE VALUES(" + n + ", \"" + name + "\");";
+    public void DBInput(String id, String name) {
+        String sql = "INSERT INTO TEST_DBTABLE VALUES(\"" + id + "\"" + ", \"" + name + "\");";
 
         try {
             Statement st = this.conn.createStatement();
