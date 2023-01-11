@@ -8,13 +8,13 @@ public class DBManager {
     private final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private final String DB_URL = "jdbc:mysql://localhost/MySQL";
     private final String USER_NAME = "root";
-    private final String PASSWORD = "chan7542";
+    private final String PASSWORD = "";
 
     public DBManager() {
         try {
             System.out.println("생성자");
             Class.forName("com.mysql.jdbc.Driver");
-            this.conn = DriverManager.getConnection("jdbc:mysql://localhost/MySQL", "root", "chan7542");
+            this.conn = DriverManager.getConnection("jdbc:mysql://localhost/MySQL", "root", "");
             System.out.println("드라이버 로딩 성공");
         } catch (Exception var4) {
             System.out.println("드라이버 로딩 실패 ");
