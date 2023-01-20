@@ -14,6 +14,6 @@ public class Main {
 
         Calendar c = new Calendar(year, month, day);
 
-        System.out.println("해당 날짜의 요일은 " + c.d_o_week() + "입니다.");
+        System.out.println("해당 날짜의 요일은 " + c.d_o_week() + " 입니다.");
     }
 }
